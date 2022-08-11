@@ -17,7 +17,7 @@ export default {
 </script>
 
 <style lang="less" scoped>
-/deep/ .header-publish-box {
+.header-publish-box {
   display: flex;
   flex-direction: column; // 纵向布局，主轴为纵向，交叉轴为横向
   align-items: center; // 交叉轴对齐方式
