@@ -10,6 +10,7 @@
     maxlength="100"
     placeholder="请输入热门关键词"
     @search="onSearch"
+    class="search-fix"
   >
     <template #right-icon>
       <button type="button" id="search-btn"></button>
@@ -36,7 +37,6 @@ export default {
   }
 }
 </script>
-
 <style lang="less" scoped>
 #search-btn {
   border: 0;
@@ -44,6 +44,14 @@ export default {
   width: 50px;
   background: url(@/assets/search-btn@2x.png) no-repeat right;
   background-size: 100%;
+}
+
+.search-fix {
+  position: fixed;
+  z-index: 100;
+  left: 0;
+  top: 0;
+  width: 100%;
 }
 
 /deep/ .van-field__right-icon {

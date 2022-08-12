@@ -4,7 +4,7 @@
       <Publish></Publish>
     </Search>
 
-    <van-swipe class="my-swipe" :autoplay="3000" lazy-render :height="150">
+    <van-swipe class="my-swipe" :autoplay="3000" lazy-render :height="150+85">
       <van-swipe-item v-for="image in images" :key="image">
         <img :src="image"/>
       </van-swipe-item>
@@ -64,6 +64,7 @@ export default {
 }*/
 </style>
 <style lang="less" scoped>
+
 //.home-container {
 //  padding: 46px 0 50px 0
 //}
@@ -73,6 +74,8 @@ export default {
 //}
 
 .my-swipe .van-swipe-item {
+  position: relative;
+  margin-top: 58px;
   color: #fff;
   font-size: 20px;
   line-height: 150px;
